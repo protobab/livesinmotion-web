@@ -3,72 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lives In Motion | Media That Moves the World</title>
+    <title>Lives In Motion Ltd | Media & Ministry</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .brand-gold { color: #ffca28; }
-        .brand-bg-green { background-color: #004d40; }
-        .gallery-card:hover { transform: scale(1.05); transition: 0.3s; }
+        :root { --brand-green: #004d40; --brand-gold: #ffca28; }
+        .bg-brand-green { background-color: var(--brand-green); }
+        .text-brand-gold { color: var(--brand-gold); }
+        .mission-gradient { background: linear-gradient(135deg, #004d40 0%, #002d26 100%); }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-    <nav class="brand-bg-green p-4 flex justify-between items-center shadow-lg sticky top-0 z-50">
-        <img src="your-logo-link-here" alt="Lives In Motion" class="h-12">
-        <div class="hidden md:flex space-x-6 text-white font-bold">
-            <a href="#radio" class="hover:text-yellow-400">Radio</a>
-            <a href="#news" class="hover:text-yellow-400">TV News</a>
-            <a href="#ministry" class="hover:text-yellow-400">Ministry</a>
-            <a href="https://patreon.com" class="brand-gold">Support Us</a>
+    <nav class="bg-brand-green p-5 text-white flex justify-between items-center sticky top-0 z-50 shadow-xl border-b border-brand-gold">
+        <div class="flex items-center">
+            <span class="text-2xl font-black tracking-tighter">LIVES IN <span class="text-brand-gold">MOTION</span></span>
         </div>
-        <a href="https://wa.me/2349031167282" class="bg-green-500 text-white px-4 py-2 rounded-full text-sm">WhatsApp Live</a>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#radio" class="hover:text-brand-gold transition">Radio</a>
+            <a href="#tv" class="hover:text-brand-gold transition">AI TV News</a>
+            <a href="#ministry" class="hover:text-brand-gold transition">Ministry</a>
+        </div>
+        <a href="https://wa.me/2349031167282" class="bg-green-600 px-5 py-2 rounded-full font-bold hover:bg-green-700 transition">WhatsApp Live</a>
     </nav>
 
-    <header class="text-center py-16 bg-white">
-        <h1 class="text-4xl font-extrabold text-gray-900">Media that <span class="brand-gold">Moves the World</span></h1>
-        <p class="mt-4 text-lg text-gray-600">Global, Nigerian, and African News, Culture, and Sports.</p>
+    <header class="py-20 px-6 text-center bg-white border-b border-gray-100">
+        <h1 class="text-5xl md:text-7xl font-black mb-6">Media that <span class="text-brand-gold underline decoration-green-800">Moves the World</span></h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Bridging the global African diaspora with AI innovation, authentic culture, and spiritual truth.
+        </p>
     </header>
 
-    <section id="radio" class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4">
-        <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
-            <h2 class="text-2xl font-bold mb-4">Live Radio</h2>
-            <iframe src="https://azuracast-nuremberg.myautodj.com/public/station_8321/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-700">
-            <h2 class="text-2xl font-bold mb-4">Latest AI News Brief</h2>
-            <video controls class="w-full rounded-lg shadow">
-                <source src="your-latest-heygen-video-link" type="video/mp4">
-            </video>
-        </div>
-    </section>
-
-    <section id="news" class="max-w-6xl mx-auto py-16 px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Latest News Gallery</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="gallery-card bg-white rounded-lg overflow-hidden shadow">
-                <img src="news-thumb-1.jpg" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <span class="text-xs font-bold text-green-700">SPORTS</span>
-                    <h3 class="font-bold">Super Eagles Prepare for Qualifiers</h3>
-                </div>
+    <main class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 py-12">
+        
+        <section id="radio" class="bg-white p-8 rounded-3xl shadow-2xl border-l-8 border-brand-green">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">📻 Live Radio</h2>
+            <div class="rounded-xl overflow-hidden bg-gray-100 p-4 border border-gray-200">
+               <iframe src="https://azuracast-nuremberg.myautodj.com/public/station_8321/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
             </div>
-            </div>
-    </section>
+            <p class="mt-4 text-sm text-gray-500 font-medium">Streaming Globally: UK & Africa Regional Updates.</p>
+        </section>
 
-    <section id="ministry" class="brand-bg-green py-16 text-white text-center">
-        <h2 class="text-3xl font-bold mb-4">Ministry & Outreach</h2>
-        <p class="mb-8">Join our global Bible study and spiritual outreach.</p>
-        <div class="flex justify-center">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <section id="tv" class="bg-white p-8 rounded-3xl shadow-2xl border-l-8 border-brand-gold">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">📺 AI News Desk</h2>
+            <div class="aspect-video bg-gray-900 rounded-xl overflow-hidden mb-4 shadow-inner flex items-center justify-center border-4 border-gray-800">
+                <p class="text-gray-400 text-sm p-8 text-center">New AI Anchor Video Syncing from NAS... <br><span class="text-brand-gold italic">Visit hourly for updates.</span></p>
+            </div>
+            <div class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-gray-400">
+                <span>London</span> <span>Lagos</span> <span>Abuja</span> <span>Manchester</span>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="ministry" class="mission-gradient text-white py-24 px-6 mt-12 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-brand-gold uppercase tracking-widest font-bold mb-4">Our Divine Mission</h2>
+            <p class="text-3xl md:text-4xl leading-snug font-light mb-10">
+                "To bridge the global African diaspora through AI innovation and authentic storytelling. We inform the mind and move the spirit, creating a digital beacon of connection and truth."
+            </p>
+            <hr class="w-24 mx-auto border-brand-gold opacity-50 mb-10">
+            <p class="text-lg opacity-80 italic">At Lives In Motion Ltd, we believe technology should serve humanity and faith.</p>
         </div>
     </section>
 
-    <footer class="text-center py-8 text-gray-500 text-sm">
-        © 2026 Lives In Motion Ltd. UK Registered.
+    <footer class="py-12 text-center bg-gray-50 border-t border-gray-200">
+        <p class="text-gray-500 font-medium">© 2026 Lives In Motion Ltd. UK Registered Media House.</p>
     </footer>
 
-    <script src="//code.tidio.co/your-unique-code.js" async></script>
+    <script src="//code.tidio.co/YOUR_CODE_HERE.js" async></script>
 
 </body>
 </html>
-
