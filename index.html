@@ -3,100 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lives In Motion Ltd | Media & Ministry</title>
+    <title>Lives In Motion Ltd | UK Media & Ministry</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root { --brand-green: #004d40; --brand-gold: #ffca28; --brand-navy: #002d3e; }
         .bg-brand-green { background-color: var(--brand-green); }
         .text-brand-gold { color: var(--brand-gold); }
-        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center; padding: 20px; }
-        .modal.active { display: flex; }
+        .text-brand-navy { color: var(--brand-navy); }
+        .logo-b64 { content: url('https://i.postimg.cc/0jWzVvLz/Logo-Lives-In-Motion.jpg'); h-12 md:h-16 }
     </style>
 </head>
 <body class="bg-gray-50 text-brand-navy font-sans">
 
     <nav class="bg-white p-4 flex justify-between items-center sticky top-0 z-50 shadow-md border-b-4 border-brand-green">
         <div class="flex items-center">
-            <img src="https://i.postimg.cc/0jWzVvLz/Logo-Lives-In-Motion.jpg" alt="Lives In Motion Ltd" class="h-12 md:h-16 object-contain">
+            <img src="https://i.postimg.cc/0jWzVvLz/Logo-Lives-In-Motion.jpg" alt="Lives In Motion Ltd" class="logo-b64 object-contain">
         </div>
         <div class="hidden md:flex space-x-6 font-bold uppercase text-[10px] tracking-widest">
             <a href="#radio" class="hover:text-brand-green transition">Radio</a>
             <a href="#tv" class="text-brand-green">● AI Live TV</a>
             <a href="#ministry" class="hover:text-brand-green transition">Ministry</a>
+            <a href="#gdpr" class="hover:text-brand-green transition">Privacy</a>
         </div>
-        <a href="https://wa.me/2349031167282" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold text-sm shadow-lg">WhatsApp</a>
+        <a href="https://wa.me/2349031167282" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold text-sm shadow-lg transition hover:bg-black">WhatsApp</a>
     </nav>
 
-    <header class="py-12 px-6 text-center bg-white">
-        <h1 class="text-4xl md:text-5xl font-black mb-2 text-brand-navy">Media that <span class="text-brand-green">Moves the World</span></h1>
+    <header class="py-12 px-6 text-center bg-white border-b border-gray-100">
+        <h1 class="text-4xl md:text-5xl font-black mb-2 text-brand-navy">Media that <span class="text-brand-green underline decoration-brand-gold">Moves the World</span></h1>
         <p class="text-gray-500 italic">"Technology serving humanity and faith."</p>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 py-8">
         
-        <section id="radio" class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
-            <h2 class="text-2xl font-black mb-4">Live Radio</h2>
-            <div class="rounded-xl bg-brand-navy p-6 border-b-4 border-brand-green">
-                <audio controls class="w-full">
-                    <source src="https://azuracast-nuremberg.myautodj.com/listen/station_8321_1775290855/radio.mp3" type="audio/mpeg">
-                </audio>
+        <section id="radio" class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl font-black mb-4">Live Radio</h2>
+                <div class="rounded-xl bg-brand-navy p-6 border-b-4 border-brand-green">
+                    <audio controls class="w-full">
+                        <source src="https://azuracast-nuremberg.myautodj.com/listen/station_8321_1775290855/radio.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
             </div>
-            <p class="mt-4 text-[10px] text-gray-400 uppercase font-bold tracking-widest">Global Diaspora Stream</p>
+            <p class="mt-4 text-[10px] text-gray-400 uppercase font-bold tracking-widest text-center">Diaspora Global Stream • UK & Africa News</p>
         </section>
 
         <section id="tv" class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
-            <h2 class="text-2xl font-black mb-4 text-brand-green underline decoration-brand-gold">AI News Desk</h2>
-            <div class="aspect-video bg-black rounded-xl overflow-hidden border-2 border-brand-navy relative">
+            <h2 class="text-2xl font-black mb-4 text-brand-green">AI News Desk</h2>
+            <div class="aspect-video bg-black rounded-xl overflow-hidden relative border-4 border-brand-navy shadow-inner">
                 <iframe 
                     src="https://labs.heygen.com/interactive-avatar/v2?avatar_id=0b2f6271bde14bbb8618a44478ff9067" 
                     style="width:100%; height:100%; border:none;"
-                    allow="microphone; camera; autoplay; encrypted-media; fullscreen;">
+                    allow="microphone; camera; autoplay; encrypted-media; fullscreen;"
+                    title="Lives In Motion AI News Anchor">
                 </iframe>
+            </div>
+            <div class="mt-2 text-[9px] text-gray-400 font-bold uppercase tracking-widest flex justify-between">
+                <span>London</span> <span>Lagos</span> <span>Synced hourly from Synology</span>
             </div>
         </section>
     </main>
 
-    <section id="ministry" class="bg-brand-green text-white py-16 px-6 text-center">
+    <section id="ministry" class="bg-brand-green text-white py-20 px-6 text-center">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-brand-gold uppercase tracking-tighter font-black mb-4">Our Mission</h2>
-            <p class="text-xl md:text-2xl font-light italic">
+            <h2 class="text-brand-gold uppercase tracking-tighter font-black mb-4">Our Divine Mission</h2>
+            <p class="text-xl md:text-2xl font-light italic leading-relaxed">
                 "To bridge the global African diaspora through AI innovation and authentic storytelling. We inform the mind and move the spirit."
             </p>
         </div>
     </section>
 
-    <footer class="bg-gray-100 border-t border-gray-300 py-10 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <p class="font-black text-brand-navy">Lives In Motion Ltd</p>
-                <p class="text-[9px] text-gray-500 uppercase">UK Registered Media House • England & Wales</p>
-            </div>
+    <footer id="gdpr" class="bg-gray-100 py-16 px-6 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="font-black text-brand-navy text-lg">Lives In Motion Ltd</p>
+            <p class="text-xs text-gray-500 uppercase tracking-tighter mb-8">Registered in England & Wales • England & Wales Media Entity</p>
             
-            <div class="flex flex-wrap justify-center gap-6">
-                <button onclick="openModal()" class="text-[10px] font-black uppercase text-brand-green underline underline-offset-4">GDPR & Regulatory Info</button>
-                <a href="https://wa.me/2349031167282" class="text-[10px] font-black uppercase text-brand-green underline underline-offset-4">Privacy Request</a>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-[10px] font-black uppercase tracking-widest text-brand-green">
+                <button onclick="openModal('privacy')" class="underline decoration-brand-gold decoration-2 underline-offset-4">GDPR & Privacy Policy</button>
+                <a href="https://wa.me/2349031167282" class="underline decoration-brand-gold decoration-2 underline-offset-4">Submit Privacy Request</a>
+                <p class="text-gray-400">© 2026 All Rights Reserved</p>
             </div>
-            
-            <p class="text-[9px] text-gray-400">© 2026 All Rights Reserved</p>
         </div>
     </footer>
 
-    <div id="gdpr-modal" class="modal" onclick="closeModal()">
-        <div class="bg-white p-8 rounded-2xl max-w-lg w-full shadow-2xl" onclick="event.stopPropagation()">
-            <h2 class="text-2xl font-black text-brand-green mb-4 border-b pb-2">GDPR Compliance</h2>
-            <div class="text-sm text-gray-600 space-y-4 leading-relaxed">
+    <div id="modal-privacy" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center p-6 backdrop-blur-sm" onclick="closeModal()">
+        <div class="bg-white p-8 rounded-2xl max-w-lg shadow-2xl" onclick="event.stopPropagation()">
+            <h3 class="text-2xl font-black text-brand-green mb-4">UK & EU GDPR Compliance</h3>
+            <div class="text-sm text-gray-700 space-y-4">
                 <p><strong>Entity:</strong> Lives In Motion Ltd (UK Registered).</p>
-                <p><strong>Policy:</strong> We adhere to the UK Data Protection Act 2018. We do not sell user data. All WhatsApp interactions are encrypted and private.</p>
-                <p><strong>Cookies:</strong> Essential cookies are used only for the functionality of our Radio and AI players.</p>
+                <p><strong>Cookies:</strong> We only use essential functional cookies to power the Radio and TV players. We do not use tracking or advertising cookies.</p>
+                <p><strong>Data Processing:</strong> We do not store personal data on this site. Communication via WhatsApp is private and subject to WhatsApp's encryption policy.</p>
             </div>
-            <button onclick="closeModal()" class="mt-8 w-full bg-brand-green text-white font-bold py-3 rounded-xl transition hover:bg-black">Close</button>
+            <button onclick="closeModal()" class="mt-8 bg-brand-green text-white w-full py-3 rounded-lg font-bold">I Understand</button>
         </div>
     </div>
 
     <script>
-        function openModal() { document.getElementById('gdpr-modal').classList.add('active'); }
-        function closeModal() { document.getElementById('gdpr-modal').classList.remove('active'); }
+        function openModal(id) { document.getElementById('modal-privacy').classList.add('flex'); document.getElementById('modal-privacy').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('modal-privacy').classList.add('hidden'); document.getElementById('modal-privacy').classList.remove('flex'); }
     </script>
-
 </body>
 </html>
